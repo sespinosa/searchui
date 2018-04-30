@@ -2,6 +2,7 @@
 
 [SUIT](github.com/attivio/suit) (the library that powers the search interface) also supports limited functionality with [Elastic](https://www.elastic.co/) and [Solr](http://lucene.apache.org/solr/).
 
+
 # Elastic
 
 ## Prerequisites for elastic:
@@ -22,6 +23,10 @@ In configuration.properties.js:
     ```javascript
       baseUri: "http://my.elastic.instance:9200/myIndex/_search"
     ```
+
+## The rest of the steps can be found on **General configuration (`elastic` and `solr`)**
+
+___
 
 # Solr
 
@@ -49,10 +54,6 @@ In configuration.properties.js:
 
   3. Enable **CORS**.
 
-## The rest of the steps can be found on **General configuration (`elastic` and `solr`)**
-
-___
-
 ## Configuration in solr:
 
 In configuration.properties.js:
@@ -70,7 +71,7 @@ In configuration.properties.js:
 
 ___
 
-## General configuration (`elastic` and `solr`):
+# General configuration (`elastic` and `solr`):
 
 1. Add `customOptions` in the `ALL` property (`ALL.customOptions`):
 
@@ -123,7 +124,7 @@ ___
 
         You can configure this fields on `SearchUISearchPage.sortableFields`, its a array of string with the field names.
 
-        This are the fields included in the sort menu, this fields need to exist in the mappings object (`ALL.customOptions.mappings`)
+        These fields are included in the sort menu, they need to exist in the mappings object (`ALL.customOptions.mappings`)
 
         ```javascript
           sortableFields: [
